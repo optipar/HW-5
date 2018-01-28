@@ -1,0 +1,258 @@
+body {
+  background-image: url('../images/Homework-5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  position: relative;
+  width: 896px;
+  padding: 62px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+li, h3, span, .submenu_item {
+  font-family: 'Pathway Gothic One', Arial, sans-serif;
+}
+
+ul {
+  position: relative;
+  width: 830px;
+  padding: 92px 70px 94px 94px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 28px;
+  margin: 20px;
+}
+
+.menu_item {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  border-radius: 10%;
+  width: 80px;
+  height: 125px;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  background-color: #fff;
+  right: -9px;
+}
+
+.submenu::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  top: -5px;
+  left: 30px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.submenu_item {
+  display: inline-block;
+  color:#6b7488;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1px;
+}
+
+.submenu_item a {
+  color: #6b7488;
+  line-height: 1px;
+}
+
+.menu_item:hover >.submenu {
+  display: block;
+  color: #263555;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo {
+  width: 136px;
+  height: 136px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-family: 'Dorsa', Arial, sans-serif;
+  font-size: 59px;
+  font-weight: 200;
+  margin: 0;
+  text-align: center;
+  line-height: 136px;
+}
+
+.logo, h3 {
+  color: #263555;
+}
+
+.image {
+  position: relative;
+}
+
+.places {
+  display: none;
+  position: absolute;
+  width: 270px;
+  height: 119px;
+  bottom: 200px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+.first_text, .second_text {
+  display: inline-block;
+  padding: 5px;
+}
+
+.first_text {
+  color: #263555;
+  background-color: #ffffff;
+  font-size: 22px;
+}
+
+.second_text {
+  color: #ffffff;
+  background-color: #38afe5;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.image:hover > .places {
+  display: block;
+}
+
+nav a:hover {
+  color: #263555
+}
+
+.blue_botton {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: 40px;
+  left: 30px;
+}
+
+.blue_botton a {
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #38afe5;
+  text-align: center;
+  line-height: 100px;
+  text-decoration: none;
+  font-size: 30px;
+  bottom: 50px;
+}
+
+.left_botton::before {
+  content: '\2190';
+  position: absolute;
+  bottom: -5px;
+  color: #fff;
+  text-align: center;
+  left: 2px;
+}
+
+.right_botton::before {
+  content: '\2192';
+  position: absolute;
+  bottom: -5px;
+  color: #fff;
+  text-align: center;
+  left: 55px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 200;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.venice, .newyork, .paris {
+  display: inline-block;
+  position: relative;
+  padding-right: 5px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.block_venice, .block_newyork, .block_paris {
+  display: none;
+  position: absolute;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 10px;
+  background-color: #193149;
+  text-align: center;
+  width: 146px;
+  height: 269px;
+  bottom: 5px;
+}
+
+.venice:hover > .block_venice {
+  display: block;
+}
+
+.newyork:hover > .block_newyork {
+  display: block;
+}
+
+.paris:hover > .block_paris {
+  display: block;
+}
+
+.details_botton {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 0 13px;
+  border-radius: 10%;
+  left: 73px;
+  top: 250px;
+  border-color: 1px solid #000;
+}
+
+.botton {
+  position: fixed;
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #38afe5;
+  bottom: 300px;
+  left: 1425px;
+}
+
+.botton::before {
+  content: '\2191';
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  color: #fff;
+}
